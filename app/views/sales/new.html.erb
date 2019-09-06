@@ -1,0 +1,22 @@
+<h1>Sales#new</h1>
+<p>Find me in app/views/sales/new.html.erb</p>
+
+<%= form_with model: Sale.new, local: true do |f| %>
+  <br>
+  <%= f.label :detail %>
+  <%= f.text_area :detail%>
+  <br>
+  <%= f.label :category %>
+  <%= f.number_field :category%>
+  <br>
+  <%= f.label :value %>
+  <%= f.number_field :value%>
+  <br>
+  <%= f.label :discount %>
+  <%= f.number_field :discount%>
+  <br>
+  <%= f.label :tax %>
+  <%= f.check_box :tax%>
+  <br>
+  <%= f.submit "Submit" %>
+<% end %>
